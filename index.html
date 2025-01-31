@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="eng">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title></title>
+
+		<!-- sora font style link -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap"
+			rel="stylesheet"
+		/>
+
+		<!-- adlam display font style link -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap"
+			rel="stylesheet"
+		/>
+
+		<!-- tailwind css script -->
+		<script src="https://cdn.tailwindcss.com"></script>
+
+		<!-- font awosome script -->
+		<script
+			src="https://kit.fontawesome.com/0ad4d494ca.js"
+			crossorigin="anonymous"
+		></script>
+
+		<!-- my own style -->
+		<style>
+			.font-adlam {
+				font-family: 'ADLaM Display', serif;
+				font-optical-sizing: auto;
+			}
+            
+			.font-sora {
+				font-family: 'Sora', serif;
+				font-optical-sizing: auto;
+			}
+
+			
+		</style>
+	</head>
+	<body>
+		<main class="font-sora">
+			<!-- navbar start -->
+			<header class="bg-[#FFF9F4] border md:border-0 lg:border-0">
+				<nav
+					class="flex justify-between lg:justify-around items-center px-2 lg:p-2"
+				>
+					<div class="flex gap-1 items-center cursor-pointer">
+						<img
+							class="scale-50 lg:scale-75"
+							src="./media/logo-header.png"
+							alt="logo-header"
+						/>
+						<p class="hidden lg:block">
+							Browse <span class="text-yellow-500">4</span>Pets
+						</p>
+					</div>
+
+					<div class="hidden lg:flex items-center gap-4">
+						<a href="#">Find a pet</a>
+						<a href="#">Breeds </a>
+						<a href="#">Contact us </a>
+					</div>
+
+					<div class="hidden lg:flex items-center gap-3">
+						<button>
+							<i class="fa-regular fa-bell"></i>
+						</button>
+						<button>
+							<i class="fa-solid fa-magnifying-glass"></i>
+						</button>
+						<button class="px-4 py-1 rounded-lg border border-[#ffdc26]">
+							Login
+						</button>
+						<button class="bg-[#ffdc26] px-4 py-1 rounded-lg">Register</button>
+					</div>
+					<div class="block lg:hidden">
+						<i class="fa-solid fa-align-justify"></i>
+					</div>
+				</nav>
+			</header>
+			<!-- navbar end -->
+		</main>
+	</body>
+</html>
