@@ -36,13 +36,28 @@
 				font-family: 'ADLaM Display', serif;
 				font-optical-sizing: auto;
 			}
-            
+
 			.font-sora {
 				font-family: 'Sora', serif;
 				font-optical-sizing: auto;
 			}
 
-			
+			/* style for banner section's animation */
+
+			.slide {
+				animation: slide 3s 3s ease-in-out alternate infinite;
+			}
+
+			@keyframes slide {
+				0% {
+					opacity: 100%;
+					transform: translateX(0vw);
+				}
+				100% {
+					opacity: 0%;
+					transform: translateX(-20vw);
+				}
+			}
 		</style>
 	</head>
 	<body>
@@ -87,6 +102,30 @@
 				</nav>
 			</header>
 			<!-- navbar end -->
+
+			<!-- banner section start -->
+			<section
+				class="banner relative px-2 pt-3 flex flex-col lg:flex-col lg:container mx-auto bg-contain"
+			>
+				<div class="lg:p-24 flex flex-col gap-4 lg:absolute">
+					<h1 class="font-adlam text-2xl lg:text-5xl z-10">
+						Pamper Your Pet,<br />
+						Because They Deserve <br />
+						the Best
+					</h1>
+					<p class="lg:w-1/2 text-stone-600 z-10">
+						Discover a world of treats, toys, and essentials handpicked for your
+						furry friends. Shop now and make tails wag with joy!
+					</p>
+					<button class="w-fit px-4 py-1 rounded-lg bg-[#ffdc26] z-10">
+						Find a pet
+					</button>
+				</div>
+				<div class="-mt-20 lg:mt-0 overflow-hidden">
+					<img class="slide" src="./media/cat-big.png" alt="cat-img" />
+				</div>
+			</section>
+			<!-- banner section end -->
 		</main>
 	</body>
 </html>
